@@ -25,7 +25,7 @@ export const NavBarTxtProductos = [
 ];
 
 //. Props TwoBlocks
-import img0 from "/public/trifasic_img/DSC/PC9155-removebg-preview.png";
+import img0 from "/public/hero/eIMG/pexels-ajay-donga-2174656.jpg";
 import img1 from "/public/trifasic_img/paradox/PGM4_Front_UHD-removebg-preview.png";
 import img2 from "/public/trifasic_img/DSC/WT5500-removebg-preview.png";
 export const altImg0 = "EVO192 Front 4K";

@@ -1,36 +1,40 @@
 import Link from "next/link";
-import { Zen_Dots_Regular } from "@/fonts/fonts.jsx";
-import { NavBarListItems } from "@/types/types.ts";
 
-const NavBarListItem: NavBarListItems[] = [
-  {
-    linkName: "Home",
-    linkUrl: "/",
-  },
-  {
-    linkName: "Products",
-    linkUrl: "/products",
-  },
-];
-
-function Navbar(NavBarListItem: Array<NavBarListItems>) {
+function Navbar() {
   return (
-    <nav
-      className={`${Zen_Dots_Regular.className} bg-[#25D366] w-full h-5 px-10 py-6 text-center flex justify-center items-center`}
-    >
-      <ul className="flex justify-center space-x-4 ">
-        {NavBarListItem.map((items: NavBarListItems, index: number) => (
-          <li key={index}>
-            <Link
-              href={items.linkUrl}
-              className="underline text-2xl italic font-extrabold tracking-widest"
-            >
-              {items.linkName}
-            </Link>
-          </li>
-        ))}
+    <section className="w-full min-h-[50px] grid place-items-center text-white font-bold bg-gradient-to-r from-yellow-500 via-blue-600 to-red-600 py-3 text-xs md:text-xl">
+      <ul className="flex justify-between items-center space-x-3 uppercase ">
+        <li>
+          <Link href="/" className="underline hover:text-[#254c1c]">
+            motos
+          </Link>
+        </li>
+        <li>|</li>
+        <li>
+          <Link href="/" className="underline hover:text-[#254c1c]">
+            repuestos
+          </Link>
+        </li>
+        <li>|</li>
+        <li>
+          <Link href="/" className="underline hover:text-[#254c1c]">
+            tractores
+          </Link>
+        </li>
+        <li>|</li>
+        <li>
+          <Link href="/" className="underline hover:text-[#254c1c]">
+            concesionarios
+          </Link>
+        </li>
+        <li>|</li>
+        <li>
+          <Link href="/" className="underline hover:text-[#254c1c]">
+            ensamblaje
+          </Link>
+        </li>
       </ul>
-    </nav>
+    </section>
   );
 }
 
