@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="1000"
+   width="1000"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.832"
+     inkscape:cx="499.39904"
+     inkscape:cy="500.60096"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <metadata
+     id="metadata2">IcoFont Icons<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:title>facebook</dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <title
+     id="title4">facebook</title>
+  <glyph
+     glyph-name="facebook"
+     unicode=""
+     horiz-adv-x="1000"
+     id="glyph6" />
+  <path
+     d="M703.2 345.8h-138.60000000000002v-90.80000000000001c0-34.099999999999994 22.699999999999932-42.099999999999994 38.60000000000002-42.099999999999994h97.59999999999991v-149.9l-134.5999999999999-0.5c-149.30000000000007 0-183.20000000000005 111.80000000000001-183.20000000000005 183.4v99.9h-86.39999999999998v154.39999999999998h86.39999999999998v437.2h181.70000000000005v-437.09999999999997h122.59999999999991l15.900000000000091-154.5z"
+     id="path8"
+     style="fill:#00ff00" />
+</svg>

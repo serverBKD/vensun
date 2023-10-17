@@ -20,9 +20,9 @@ function TwoBlock({
           src={imgURL}
           alt={altIMG}
           quality={100}
-          width={1920}
-          height={20}
           layout="responsive"
+          width={48}
+          height={48}
           style={{
             objectFit: "contain",
             objectPosition: "50% 50%",
