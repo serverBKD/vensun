@@ -106,7 +106,7 @@ function Cards({ numGRID: numGRID = 4 }) {
               style={{
                 objectFit: "contain",
                 objectPosition: "center",
-                boxShadow: "10px 7rem 31px 3px #00CCFF",
+                boxShadow: "10px 7rem 31px 3px #999",
                 overflow: "hidden",
               }}
             />

@@ -12,7 +12,7 @@ import imgY from "/public/svg_brands/whatsapp.svg";
 
 function Footer() {
   return (
-    <section className="w-full h-16 mt-3 mb-0 bg-blue-700 flex justify-center items-center gap-x-3 text-white font-bold">
+    <section className="w-full h-16 mt-3 mb-0 bg-[#123] flex justify-center items-center gap-x-3 text-white font-bold">
       <article>
         <Link href={add0}>Address</Link>
       </article>

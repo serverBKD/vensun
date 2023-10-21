@@ -1,9 +1,10 @@
 import Hero from "@/components/Hero.tsx";
 import Navbar from "@/components/Navbar.tsx";
 import TriPack from "@/components/TriPack.tsx";
-import CTA from "@/components/CTA";
+import CTA from "@/components/CTA.tsx";
 import TwoBlock from "@/components/TwoBlock";
-import Title from "@/components/Title";
+import Cards from "@/components/Cards.tsx";
+import Title from "@/components/Title.jsx";
 import imgTB from "/public/placeholder_motos/tezo1850x1540.png";
 import WhatsappButton from "@/components/WhatsappButton.tsx";
 import Footer from "@/components/Footer";
@@ -25,6 +26,10 @@ export default function Home() {
         colorBg="#2c2c2e"
         colorText="#fff"
       />
+      <Title Title="¡Partes y Repuestos!" />
+      <Cards numGRID={6} />
+      <Cards numGRID={5} />
+      <Cards numGRID={6} />
       <WhatsappButton />
       <Footer />
     </main>
