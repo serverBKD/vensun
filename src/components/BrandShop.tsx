@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img0 from "/public/trifasic_img/DSC/PC9155-removebg-preview.png";
+import img0 from "/public/placeholder_motos/azul-1-500x660.png";
 
 function BrandShop() {
   return (

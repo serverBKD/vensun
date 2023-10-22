@@ -99,7 +99,7 @@ function Cards({ numGRID: numGRID = 4 }) {
             <Image
               src={item.image}
               layout="responsive"
-              className="w-[120px] h-[120px] "
+              className="w-[180px] h-[180px] "
               alt={item.description}
               width={160}
               height={160}

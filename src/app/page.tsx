@@ -2,12 +2,14 @@ import Hero from "@/components/Hero.tsx";
 import Navbar from "@/components/Navbar.tsx";
 import TriPack from "@/components/TriPack.tsx";
 import CTA from "@/components/CTA.tsx";
-import TwoBlock from "@/components/TwoBlock";
+import TwoBlock from "@/components/TwoBlock.tsx";
 import Cards from "@/components/Cards.tsx";
 import Title from "@/components/Title.jsx";
-import imgTB from "/public/placeholder_motos/tezo1850x1540.png";
 import WhatsappButton from "@/components/WhatsappButton.tsx";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer.tsx";
+import BrandShop from "@/components/BrandShop.tsx";
+
+import imgTB from "/public/placeholder_motos/tezo1850x1540.png";
 
 export default function Home() {
   return (
@@ -30,6 +32,7 @@ export default function Home() {
       <Cards numGRID={6} />
       <Cards numGRID={5} />
       <Cards numGRID={6} />
+      <BrandShop />
       <WhatsappButton />
       <Footer />
     </main>

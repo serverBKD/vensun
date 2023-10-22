@@ -17,5 +17,3 @@ function WhatsappButton() {
 }
 
 export default WhatsappButton;
-
-//absolute bottom-6 right-2
