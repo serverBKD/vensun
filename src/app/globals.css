@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    /* For rgb(255 115 179 / <alpha-value>) */
-    --color-primary: 255 115 179;
-
-    /* For hsl(198deg 93% 60% / <alpha-value>) */
-    --color-primary: 198deg 93% 60%;
-
-    /* For rgba(255, 115, 179, <alpha-value>) */
-    --color-primary: 255, 115, 179;
-  }
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

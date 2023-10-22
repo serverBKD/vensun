@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RenderHome } from "@/types/types.ts";
 
-function Navbar(RenderHome: RenderHome) {
+function Navbar({ RenderHome = false }: RenderHome) {
   return (
     <section className="w-full min-h-[50px] grid place-items-center text-white font-bold bg-gradient-to-r from-yellow-500 via-blue-600 to-red-600 py-3 text-xs md:text-xl">
       <ul className="flex justify-between items-center space-x-3 uppercase ">
