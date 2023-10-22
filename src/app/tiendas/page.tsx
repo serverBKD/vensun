@@ -1,11 +1,11 @@
+import Navbar from "@/components/Navbar";
 import TriPack from "@/components/TriPack";
-import Link from "next/link";
 
 function page() {
   return (
-    <main className="w-full h-screen bg-slate-400 ">
+    <main className="w-full min-h-screen bg-slate-400 ">
+      <Navbar RenderHome={true} />
       <h1>Concesionarioxs</h1>
-      <Link href={"/"}>HOME</Link>
       <TriPack />
     </main>
   );

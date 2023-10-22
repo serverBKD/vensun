@@ -1,18 +1,21 @@
 import { StaticImageData } from "next/image"
 
 //. Interfaces
-interface Card {
+
+interface Imagen {
+  image: string | StaticImageData
+  alt?: string 
+  width: number
+  height: number
+  url?: string
+}
+interface Card extends Imagen{
   id?: number
   fullname: string
   description: string
-  image: string | StaticImageData
-  alt?: string
-  width: number
-  height: number
-}
-
-interface CardVentas extends Card{
-  url: string
+  price?: number
+  rating?: string
+  category?: string
 }
 
 interface CardTwoBlock extends Card{
@@ -20,19 +23,20 @@ interface CardTwoBlock extends Card{
   colorBg: string
   colorText: string
 }
-interface NavBarListItems {
-  linkName: string
+interface LinkItems {
+  linkName?: string 
+  linkSrc?: string | StaticImageData
   linkUrl: string
 } 
+
 //. Types
 
-type RenderHome = boolean
-
+type RenderHome = boolean | any
 
 export type {
+  Imagen,
   Card,
-  CardVentas,
   CardTwoBlock,
-  NavBarListItems,
+  LinkItems,
   RenderHome
 }

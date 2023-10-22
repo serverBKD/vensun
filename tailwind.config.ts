@@ -13,7 +13,7 @@ const config: Config = {
         'gradient-vensun': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-bg': "url('/public/hero/pexels-david-sirila-12909094.jp'g)",
+        'hero-bg': "url('/public/hero/pexels-david-sirila-12909094.jpg')",
         'footer-bg': "url('/img/footer-texture.png')",
       },
     },

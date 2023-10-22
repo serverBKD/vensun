@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Zen_Dots_Regular } from "@/fonts/fonts.jsx";
+import { Zen_Dots_Regular } from "@/fonts/fonts.js";
 
 function page404() {
   return (

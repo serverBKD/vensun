@@ -1,17 +1,23 @@
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import TwoBlock from "@/components/TwoBlock.tsx";
+import { imgTwoBlocks } from "@/types/const.ts";
 
 function page() {
   return (
-    <section className="w-full h-screen bg-[#345] text-white p-10 font-bold flex flex-col">
-      <article>
-        <h1>Tractores</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-          consequuntur non magnam vero provident ad!
-        </p>
-        <p>page</p>
-        <Link href={"/"}>HOME</Link>
-      </article>
+    <section className="w-full h-screen ">
+      <Navbar RenderHome={false} />
+      <h1>Tractores</h1>
+      <TwoBlock
+        fullname="Gran Leon GC200"
+        description="Paseo tipo Chopper 200cc Doble tubo de escape"
+        ordenBlock="none"
+        alt="Paseo tipo Chopper 200cc Doble tubo de escape"
+        image={imgTwoBlocks}
+        width={320}
+        height={620}
+        colorBg="#2c2c2e"
+        colorText="#fff"
+      />
     </section>
   );
 }

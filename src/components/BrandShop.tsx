@@ -5,18 +5,16 @@ import img0 from "/public/products/placeholder_motos/azul-1-500x660.png";
 function BrandShop() {
   return (
     <section className="w-full h-[640px] px-5 flex justify-center items-center flex-wrap md:w-[60%] md:mx-auto bg-[#F6F6F6]">
-      <article className="w-[60%] min-h-[480px] md:basis-1/2 rounded-sm border-4 border-slate-400 overflow-hidden bg-white">
+      <article className="w-[60%] min-h-[480px] md:basis-1/2 rounded-sm border-4 border-slate-400 overflow-hidden bg-white grid place-content-center">
         <Image
           src={img0}
           alt="product16"
           width={480}
-          height={480}
+          height={420}
           style={{
             objectFit: "contain",
             objectPosition: "center center",
-            width: "480px",
-            height: "420px",
-            padding: ".5rem 0",
+            padding: ".5rem",
           }}
           // fill={true}
           // loader={imageLoader}

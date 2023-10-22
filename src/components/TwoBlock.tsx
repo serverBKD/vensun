@@ -6,26 +6,27 @@ function TwoBlock({
   fullname,
   description,
   ordenBlock,
+  width,
+  height,
   image,
   colorBg,
   colorText,
 }: CardTwoBlock) {
+  console.log(width, height);
   return (
     <section className="w-[80%] min-h-[120px] mx-auto hidden md:flex justify-center items-center flex-wrap text-black">
       <article
-        className={`${ordenBlock} w-full max-h-[420px] overflow-hidden md:w-[60%] bg-white skew-x-6 `}
+        className={`${ordenBlock} w-full max-h-{height} overflow-hidden md:w-[60%] bg-white skew-x-6 `}
       >
         <Image
           src={image}
           alt={description}
-          width={280}
-          height={120}
+          width={width}
+          height={height}
           quality={100}
           layout="responsive"
           style={{
-            objectFit: "cover",
-            width: "280px",
-            height: "120px",
+            objectFit: "contain",
             padding: ".5rem 0",
           }}
         />
