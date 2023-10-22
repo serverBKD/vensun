@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Navbar from "@/components/Navbar.tsx";
+import TriPack from "@/components/TriPack";
 
 function page() {
   return (
-    <section>
-      <h1>MOTOS VENSUN</h1>
-      <Link href="/">HOME</Link>
+    <section className="w-full h-screen bg-[#ccc]">
+      <Navbar RenderHome={true} />
+      <TriPack />
     </section>
   );
 }

@@ -1,3 +1,6 @@
+import { CardVentas } from "@/types/types.ts";
+
+
 //. NavBar
 
 export const NavBarTxt = [
@@ -25,11 +28,46 @@ export const NavBarTxtProductos = [
 ];
 
 //. Props TwoBlocks
-import img0 from "/public/hero/eIMG/pexels-ajay-donga-2174656.jpg";
-import img1 from "/public/trifasic_img/paradox/PGM4_Front_UHD-removebg-preview.png";
-import img2 from "/public/trifasic_img/DSC/WT5500-removebg-preview.png";
-export const altImg0 = "EVO192 Front 4K";
-export const altImg1 = "TM70 Bracket Wall Switches";
-export const altImg2 = "HS2016";
 
-export { img0 as img0, img1 as img1, img2 as img2 }
+
+
+
+//. TriPackData
+
+export const TriPackData: CardVentas[] = [
+  {
+    id: 0,
+    fullname: "Moto Venezolana",
+    description:
+      "lorem ipsum de concesionario de motos 200cc Moto de Paseo Fabricacion Venezolana",
+    image: "/products/motos/motosplaceholdervensun.png",
+    url: "/motos",
+    width: 320,
+    height: 220
+  },
+  {
+    id: 1,
+    fullname: "Partes & Garantias",
+    description:
+      "lerror consequatur maxime minus nostrum minima provident quo recusandae",
+    image: "/hero/part-finder-img.png",
+    url: "/partes",
+    width: 320,
+    height: 220
+  },
+  {
+    id: 2,
+    fullname: "concesionarios",
+    description:
+      "error consequatur maxime minus nostrum minima provident quo recusandae",
+    image: "/hero/motoBikes.jpg",
+    url: "/tiendas",
+    width: 320,
+    height: 220
+  },
+];
+
+//. TwoBlocks
+
+export const imgTwoBlocks = "/products/placeholder_motos/azul-1-500x660.png";
+ 

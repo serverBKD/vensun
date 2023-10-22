@@ -1,5 +1,6 @@
 import Image from "next/image";
-import img0 from "/public/placeholder_motos/azul-1-500x660.png";
+import Link from "next/link";
+import img0 from "/public/products/placeholder_motos/azul-1-500x660.png";
 
 function BrandShop() {
   return (
@@ -8,6 +9,8 @@ function BrandShop() {
         <Image
           src={img0}
           alt="product16"
+          width={480}
+          height={480}
           style={{
             objectFit: "contain",
             objectPosition: "center center",
@@ -62,9 +65,12 @@ function BrandShop() {
           </div>
         </div>
         <div>
-          <button className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out w-[80%] text-sm font-semibold text-center hover: text-white rounded-sm px-3 py-1 ring-2 ring-blue-500">
+          <Link
+            href={"/motos"}
+            className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out w-[80%] text-sm font-semibold text-center hover: text-white rounded-sm px-3 py-1 ring-2 ring-blue-500"
+          >
             Add to Cart
-          </button>
+          </Link>
         </div>
       </article>
     </section>

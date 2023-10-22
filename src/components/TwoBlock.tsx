@@ -1,31 +1,32 @@
 "use client";
-import { TwoBlock } from "@/types/types.tsx";
 import Image from "next/image";
+import { CardTwoBlock } from "@/types/types.tsx";
 
 function TwoBlock({
-  TitleBlock,
-  parrafBlock,
-  OrdenBlock,
-  imgURL,
-  altIMG,
+  fullname,
+  description,
+  ordenBlock,
+  image,
   colorBg,
   colorText,
-}: TwoBlock) {
+}: CardTwoBlock) {
   return (
     <section className="w-[80%] min-h-[120px] mx-auto hidden md:flex justify-center items-center flex-wrap text-black">
       <article
-        className={`${OrdenBlock} w-full max-h-[420px] overflow-hidden md:w-[60%] bg-white skew-x-6 `}
+        className={`${ordenBlock} w-full max-h-[420px] overflow-hidden md:w-[60%] bg-white skew-x-6 `}
       >
         <Image
-          src={imgURL}
-          alt={altIMG}
+          src={image}
+          alt={description}
+          width={280}
+          height={120}
           quality={100}
           layout="responsive"
-          width={48}
-          height={48}
           style={{
-            objectFit: "contain",
-            objectPosition: "50% 50%",
+            objectFit: "cover",
+            width: "280px",
+            height: "120px",
+            padding: ".5rem 0",
           }}
         />
       </article>
@@ -34,9 +35,9 @@ function TwoBlock({
       >
         <div>
           <h1 className=" text-black w-full font-bold text-2xl mb-3">
-            {TitleBlock}
+            {fullname}
           </h1>
-          <p className="text-justify">{parrafBlock}</p>
+          <p className="text-justify">{description}</p>
           <button
             onClick={() => alert("ya te escuche!")}
             className="w-full py-3 text-2xl rounded-md underline text-[#00CCFF] bg-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
