@@ -1,5 +1,5 @@
 import Image from "next/image";
-//import { Data, numGRID } from "../types/types.ts";
+import { Card } from "../types/types.ts";
 
 // const data: Data[] = [
 //   {
@@ -88,10 +88,11 @@ import Image from "next/image";
 //   },
 // ];
 
-function Cards({ numGRID = 4, data = [] }) {
+function Cards({ numGRID:number = 4, data:Card[]  }) {
+  console.log(data);
   return (
     <section className="w-[90%] h-auto mx-auto bg-white flex justify-center items-center gap-7 flex-wrap pb-3">
-      {data.slice(0, numGRID).map((item, index) => {
+      {/* {data.slice(0, numGRID).map((item, index) => {
         return (
           <article
             key={index || item.id}
@@ -119,7 +120,7 @@ function Cards({ numGRID = 4, data = [] }) {
             </p>
           </article>
         );
-      })}
+      })} */}
     </section>
   );
 }

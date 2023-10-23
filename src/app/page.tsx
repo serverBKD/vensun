@@ -29,9 +29,9 @@ export default function Home() {
         colorText="#fff"
       />
       <Title H1="¡Partes y Repuestos!" />
-      <Cards numGRID={6} />
+      {/* <Cards numGRID={6} />
       <Cards numGRID={5} />
-      <Cards numGRID={6} />
+      <Cards numGRID={6} /> */}
       <BrandShop />
     </main>
   );

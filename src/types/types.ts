@@ -5,8 +5,8 @@ import { StaticImageData } from "next/image"
 interface Imagen {
   image: string | StaticImageData
   alt?: string 
-  width: number
-  height: number
+  width?: number
+  height?: number
   url?: string
 }
 interface Card extends Imagen{
@@ -14,7 +14,7 @@ interface Card extends Imagen{
   fullname: string
   description: string
   price?: number
-  rating?: string
+  rating?: string | {}
   category?: string
 }
 
