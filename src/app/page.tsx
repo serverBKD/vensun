@@ -8,12 +8,14 @@ import Title from "@/components/Title.tsx";
 import BrandShop from "@/components/BrandShop.tsx";
 
 import { imgTwoBlocks } from "@/types/const.ts";
+import GridCard from "@/components/GridCard";
 
 export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-between scroll-smooth">
       <Hero />
       <Navbar RenderHome={false} />
+      <GridCard />
       <Title H1="¡dime a donde vamos!" />
       <TriPack />
       <CTA />
