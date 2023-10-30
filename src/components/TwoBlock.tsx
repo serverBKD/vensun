@@ -12,7 +12,6 @@ function TwoBlock({
   colorBg,
   colorText,
 }: CardTwoBlock) {
-  console.log(width, height);
   return (
     <section className="w-[80%] min-h-[120px] mx-auto hidden md:flex justify-center items-center flex-wrap text-black">
       <article
@@ -24,11 +23,7 @@ function TwoBlock({
           width={width}
           height={height}
           quality={100}
-          layout="responsive"
-          style={{
-            objectFit: "contain",
-            padding: ".5rem 0",
-          }}
+          className="w-[640px] h-[320px] contain"
         />
       </article>
       <article

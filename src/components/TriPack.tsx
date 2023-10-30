@@ -13,10 +13,6 @@ function TriPack(): any {
               alt={"TriPackData.description"}
               width={card.width}
               height={card.height}
-              layout="fixed"
-              quality={100}
-              objectFit="contain"
-              objectPosition="center"
               className="w-[380px] h-[380px]"
             />
             <h2 className="font-bold py-2 uppercase text-lg">

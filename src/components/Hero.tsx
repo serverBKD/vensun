@@ -6,23 +6,14 @@ import { Zen_Dots_Regular } from "@/fonts/fonts.js";
 function Hero() {
   return (
     <section
-      className={`${Zen_Dots_Regular.className} w-full h-screen min-h-[100vh] flex items-center xl:justify-self-start`}
+      className={`${Zen_Dots_Regular.className} w-full h-screen min-h-[100vh] flex items-center xl:justify-self-start bg-[url("/hero/motoBikes.jpg")] bg-no-repeat bg-cover`}
     >
       <Image
-        src={"/public/hero/motoBikes.jpg"}
+        src="/hero/motoBikes.jpg"
         alt="hero"
         width={1080}
         height={1080}
-        priority={true}
-        className="w-[300px] h-[300px] object-contain"
-        // blurDataURL={"/public/hero/herovs.jpg"}
-        // placeholder="blur"
-        // loading="eager"
-        // unoptimized={true}
-        quality={100}
-        // sizes="(max-width: 1080px) 100vw,
-        // (max-width: 1200px) 50vw,
-        // 33vw"
+        className="w-1 h-1"
       />
       <div className="flex flex-col gap-y-3 bg-gradient-to-r from-yellow-500 via-blue-600 to-red-600 text-white px-8 py-4 rounded-xl">
         <h1 className="text-6xl font-extrabold ">VENSUN</h1>

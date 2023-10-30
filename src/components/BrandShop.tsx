@@ -6,19 +6,7 @@ function BrandShop() {
   return (
     <section className="w-full h-[640px] px-5 flex justify-center items-center flex-wrap md:w-[60%] md:mx-auto bg-[#F6F6F6]">
       <article className="w-[60%] min-h-[480px] md:basis-1/2 rounded-sm border-4 border-slate-400 overflow-hidden bg-white grid place-content-center">
-        <Image
-          src={img0}
-          alt="product16"
-          width={480}
-          height={420}
-          style={{
-            objectFit: "contain",
-            objectPosition: "center center",
-            padding: ".5rem",
-          }}
-          // fill={true}
-          // loader={imageLoader}
-        />
+        <Image src={img0} alt="product16" width={480} height={420} />
       </article>
       <article className="w-[40%] min-h-[480px] md:basis-1/2 text-black text-center font-bold grid grid-flow-row">
         <div>

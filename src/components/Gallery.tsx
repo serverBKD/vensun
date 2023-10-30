@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { galleryImg } from "@/types/types.tsx";
+import { Imagen } from "@/types/types.tsx";
 
 function Gallery() {
   return (
@@ -28,11 +28,3 @@ function Gallery() {
 }
 
 export default Gallery;
-
-// <picture key={index} className="w-[120px] h-[120px] bg-white overflow-hidden">
-//   <Image
-//     src={img.imgURL}
-//     alt={img.imgAlt}
-//     style={{ width: "120px", height: "120px" }}
-//   />
-// </picture>

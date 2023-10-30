@@ -14,7 +14,7 @@ export default function Home() {
     <main className="w-full min-h-screen flex flex-col items-center justify-between scroll-smooth">
       <Hero />
       <Navbar RenderHome={false} />
-      <Title H1="¡dime a donde vamos!" />
+      {/* <Title H1="¡dime a donde vamos!" /> */}
       <TriPack />
       <CTA />
       <TwoBlock
@@ -29,9 +29,7 @@ export default function Home() {
         colorText="#fff"
       />
       <Title H1="¡Partes y Repuestos!" />
-      {/* <Cards numGRID={6} />
-      <Cards numGRID={5} />
-      <Cards numGRID={6} /> */}
+      <Cards numGRID={6} />
       <BrandShop />
     </main>
   );

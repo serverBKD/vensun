@@ -32,11 +32,13 @@ interface LinkItems {
 //. Types
 
 type RenderHome = boolean | any
+type numGRID = number | any
 
 export type {
   Imagen,
   Card,
   CardTwoBlock,
   LinkItems,
-  RenderHome
+  RenderHome,
+  numGRID
 }
