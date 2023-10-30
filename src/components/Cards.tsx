@@ -85,7 +85,7 @@ const data: Card[] = [
     fullname: "Sensor Security",
     price: 48,
     description: "Lighting Security",
-    image: "/products/repuestos/IMG_20231012_154936.jpg",
+    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
   },
 ];
 
