@@ -17,3 +17,8 @@ v0.0.12: / 31/10/2023
 5.- Solucion de bugs: fetch de Datos e Importacion de Image en next.config.js
 
 6.- loading: Avance y TODO: Spinner
+
+2023NOV01: v0.0.13
+
+ npm init @eslint/config
+  

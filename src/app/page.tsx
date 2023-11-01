@@ -1,15 +1,15 @@
-import Hero from "@/components/Hero.tsx";
-import Navbar from "@/components/Navbar.tsx";
-import TriPack from "@/components/TriPack.tsx";
-import CTA from "@/components/CTA.tsx";
-import TwoBlock from "@/components/TwoBlock.tsx";
-import Cards from "@/components/Cards.tsx";
-import Title from "@/components/Title.tsx";
-import BrandShop from "@/components/BrandShop.tsx";
+import Hero from '@/components/Hero.tsx'
+import Navbar from '@/components/Navbar.tsx'
+import TriPack from '@/components/TriPack.tsx'
+import CTA from '@/components/CTA.tsx'
+import TwoBlock from '@/components/TwoBlock.tsx'
+import Cards from '@/components/Cards.tsx'
+import Title from '@/components/Title.tsx'
+import BrandShop from '@/components/BrandShop.tsx'
 
-import { imgTwoBlocks } from "@/types/const.ts";
+import { imgTwoBlocks } from '@/types/const.ts'
 
-export default function Home() {
+export default function Home () {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-between scroll-smooth">
       <Hero />
@@ -32,5 +32,5 @@ export default function Home() {
       <Cards numGRID={4} />
       <BrandShop />
     </main>
-  );
+  )
 }

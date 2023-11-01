@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
-import TwoBlock from "@/components/TwoBlock.tsx";
-import { imgTwoBlocks } from "@/types/const.ts";
+import Navbar from '@/components/Navbar'
+import TwoBlock from '@/components/TwoBlock.tsx'
+import { imgTwoBlocks } from '@/types/const.ts'
 
-function page() {
+function page () {
   return (
     <section className="w-full h-screen ">
       <Navbar RenderHome={false} />
@@ -19,7 +19,7 @@ function page() {
         colorText="#fff"
       />
     </section>
-  );
+  )
 }
 
-export default page;
+export default page
