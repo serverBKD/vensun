@@ -1,116 +1,52 @@
 import Image from "next/image";
-import { Card, numGRID } from "@/types/types.ts";
+import { numGRID } from "@/types/types.ts";
+import { DATACARD } from "@/types/const.ts";
 
-const data: Card[] = [
-  {
-    id: 1,
-    fullname: "Camera Security",
-    price: 350,
-    description: "Camera Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 2,
-    fullname: "Sensor Security",
-    price: 12.5,
-    description: "Sensor Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 3,
-    fullname: "Siren Security",
-    price: 35,
-    description: "Siren Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 4,
-    fullname: "Sensor Security",
-    price: 48,
-    description: "Lighting Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 5,
-    fullname: "Camera Security",
-    price: 350,
-    description: "Camera Security",
-    image:
-      "/public/products/_tempIMG/CentroMandoTapaMotor-removebg-preview.png",
-  },
-  {
-    id: 6,
-    fullname: "Sensor Security",
-    price: 12.5,
-    description: "Sensor Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 7,
-    fullname: "Siren Security",
-    price: 35,
-    description: "Siren Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 8,
-    fullname: "Sensor Security",
-    price: 48,
-    description: "Lighting Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 9,
-    fullname: "Camera Security",
-    price: 350,
-    description: "Camera Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 10,
-    fullname: "Sensor Security",
-    price: 12.5,
-    description: "Sensor Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 11,
-    fullname: "Siren Security",
-    price: 35,
-    description: "Siren Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-  {
-    id: 12,
-    fullname: "Sensor Security",
-    price: 48,
-    description: "Lighting Security",
-    image: "/public/products/repuestos/IMG_20231012_154936.jpg",
-  },
-];
+function Cards({ numGRID: numGRID = 4 }) {
+  const OFF = (X: number) => {
+    const X0 = Number(DATACARD[3].price);
+    let resOFF = (X0 * X) / 100;
+    console.log(X0 - resOFF);
+    return resOFF.toFixed(2);
+  };
 
-function Cards(numGRID: numGRID) {
-  console.log(data);
+  const xOFF = OFF(35);
+
   return (
-    <section className="w-[90%] h-[720px] mx-auto bg-slate-300 flex justify-center items-center gap-7 flex-wrap pb-3">
-      {data.slice(0, numGRID).map((item, index) => {
+    <section className="w-[90%] h-auto min-h-[720px] mx-auto flex justify-center items-center flex-wrap gap-x-3 pb-3 mb-5 bg-[#EBEBEB]">
+      {DATACARD.slice(0, numGRID).map((item) => {
         return (
           <article
+            className="w-[320px] min-h-[380px] mt-7 rounded-lg overflow-hidden bg-white text-black max-lg:w-[420px]"
             key={item.id}
-            className="w-[220px] min-h-[280px] mt-7 rounded-lg overflow-hidden bg-[#e1e3e5] text-black max-lg:w-[420px] "
           >
             <Image
               src={item.image}
-              className="w-[180px] h-[180px] "
+              // className="w-[180px] h-[180px] "
               alt={item.description}
-              width={160}
-              height={160}
+              sizes="420px"
+              width={420}
+              height={280}
+              style={{
+                minHeight: "280px",
+                minWidth: "320px",
+                maxWidth: "100%",
+                objectFit: "cover",
+                borderBottom: ".2px solid #EBEBEB",
+              }}
             />
-            <p className="mt-3 justify-center text-xs font-semibold text-center underline">
+            <p className="mt-3 justify-center text-md font-semibold ml-2 mb-5">
               {item.description}
             </p>
-            <p className="mb-2 justify-center text-xs font-semibold text-center">
-              {item.price}$
+            {/* <!-- TODO: Descuento --> */}
+            <p className=" ml-3 text-xs text-sky-400 line-through">
+              USD$ {item.price}
+            </p>
+            <p className="mb-2 ml-3 text-lg font-semibold inline-flex items-center gap-x-3">
+              USD$ {xOFF} <p className="text-xs text-sky-400">35% OFF</p>
+            </p>
+            <p className="mb-2 justify-center text-2xs font-semibold ml-3 text-sky-400">
+              Envio gratis
             </p>
           </article>
         );

@@ -3,6 +3,7 @@ import Title from "@/components/Title.tsx";
 import Cards from "@/components/Cards.tsx";
 import Navbar from "@/components/Navbar";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 async function getPartes() {
   const res = await fetch("https://fakestoreapi.com/products");
@@ -12,21 +13,40 @@ async function getPartes() {
 
 async function Page() {
   const Partes = await getPartes();
-  console.log(Partes);
   return (
-    <section className="w-full h-screen">
-      <Navbar RenderHome={false} />
+    <section className="w-full min-h-screen h-auto bg-gray-400">
+      <Navbar RenderHome={true} />
       <Title H1="Partes y Repuestos" />
-      <Cards numGRID={6} data={Partes} />
+      <div className="w-[90%] mx-5 flex justify-center flex-wrap overflow-hidden">
+        {Partes.map((item: any) => (
+          <article
+            key={item.id}
+            className="max-w-[220px] max-h-[480px] h-auto mx-1 my-3 rounded-md overflow-hidden bg-cyan-500 text-white hover:max-h-[320px]"
+          >
+            <Image
+              src={item.image}
+              alt={item.description}
+              width={220}
+              height={80}
+              style={{
+                minHeight: "320px",
+                maxHeight: "320px",
+                minWidth: "220px",
+                maxWidth: "100%",
+                objectFit: "cover",
+                padding: "2rem 1rem",
+                backgroundColor: "#fff",
+                borderBottom: ".2px solid #EBEBEB",
+              }}
+            />
+            <p className="text-xs py-1 px-3 font-semibold ">
+              {item.description}
+            </p>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
 
 export default Page;
-// {
-//   /* <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-//   <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-//     Cyan to blue
-//   </span>
-// </button>; */
-// }

@@ -38,7 +38,7 @@ export const TriPackData: Card[] = [
     description:
       "lorem ipsum de concesionario de motos 200cc Moto de Paseo Fabricacion Venezolana",
     image: "/products/motos/motosplaceholdervensun.png",
-    url: "/motos",
+    url: "https://vensun.com/motos",
     width: 320,
     height: 220
   },
@@ -48,7 +48,7 @@ export const TriPackData: Card[] = [
     description:
       "lerror consequatur maxime minus nostrum minima provident quo recusandae",
     image: "/hero/part-finder-img.png",
-    url: "/partes",
+    url: "https://vensun.com/partes",
     width: 320,
     height: 220
   },
@@ -56,9 +56,9 @@ export const TriPackData: Card[] = [
     id: 2,
     fullname: "concesionarios",
     description:
-      "error consequatur maxime minus nostrum minima provident quo recusandae",
-    image: "/hero/motoBikes.jpg",
-    url: "/tiendas",
+      "error consequatur m minima provident quo recusandae",
+    image: "/placeholders/pexels-photo-12741644.jpeg",
+    url: "https://vensun.com/tiendas",
     width: 320,
     height: 220
   },
@@ -147,6 +147,97 @@ export const NavBarItems: LinkItems[] = [
     linkUrl: "/compras"
   }, 
 ]
+
+//. Cards
+
+
+export const DATACARD: Card[] = [
+  {
+    id: 1,
+    fullname: "Camera Security",
+    price: 350,
+    description: "Camera Security",
+    image: "/products/repuestos/IMG_20231012_155423.jpg",
+  },
+  {
+    id: 2,
+    fullname: "Sensor Security",
+    price: 12.5,
+    description: "Sensor Security",
+    image: "/products/repuestos/IMG_20231012_161229.jpg",
+  },
+  {
+    id: 3,
+    fullname: "Siren Security",
+    price: 35,
+    description: "Siren Security",
+    image: "/products/repuestos/IMG_20231012_160656.jpg",
+  },
+  {
+    id: 4,
+    fullname: "Sensor Security",
+    price: 48,
+    description: "Lighting Security",
+    image: "/products/repuestos/IMG_20231012_162136.jpg",
+  },
+  {
+    id: 5,
+    fullname: "Camera Security",
+    price: 350,
+    description: "Camera Security",
+    image:
+      "/products/_tempIMG/CentroMandoTapaMotor-removebg-preview.png",
+  },
+  {
+    id: 6,
+    fullname: "Sensor Security",
+    price: 12.5,
+    description: "Sensor Security",
+    image: "/products/repuestos/IMG_20231012_162023.jpg",
+  },
+  {
+    id: 7,
+    fullname: "Siren Security",
+    price: 35,
+    description: "Siren Security",
+    image: "/products/repuestos/IMG_20231012_160644.jpg",
+  },
+  {
+    id: 8,
+    fullname: "Sensor Security",
+    price: 48,
+    description: "Lighting Security",
+    image: "/products/repuestos/IMG_20231012_162306.jpg",
+  },
+  {
+    id: 9,
+    fullname: "Camera Security",
+    price: 350,
+    description: "Camera Security",
+    image: "/products/repuestos/IMG_20231012_155602.jpg",
+  },
+  {
+    id: 10,
+    fullname: "Sensor Security",
+    price: 12.5,
+    description: "Sensor Security",
+    image: "/products/_tempIMG/WhatsApp_Image_2023-10-12_at_1.49.18_PM-removebg-preview.png",
+  },
+  {
+    id: 11,
+    fullname: "Siren Security",
+    price: 35,
+    description: "Siren Security",
+    image: "/products/_tempIMG/WhatsApp_Image_2023-10-12_at_4.37.11_PM-removebg-preview.png",
+  },
+  {
+    id: 12,
+    fullname: "Sensor Security",
+    price: 48,
+    description: "Lighting Security",
+    image: "/products/repuestos/IMG_20231012_155602.jpg",
+  },
+];
 
  //. Footer
 

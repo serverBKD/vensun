@@ -23,13 +23,13 @@ export default function Home() {
         ordenBlock="none"
         alt="Paseo tipo Chopper 200cc Doble tubo de escape"
         image={imgTwoBlocks}
-        width={500 / 10}
-        height={660 / 10}
+        width={500}
+        height={660}
         colorBg="#2c2c2e"
         colorText="#fff"
       />
       <Title H1="¡Partes y Repuestos!" />
-      <Cards numGRID={6} />
+      <Cards numGRID={4} />
       <BrandShop />
     </main>
   );

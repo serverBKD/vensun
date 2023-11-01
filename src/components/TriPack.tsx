@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { TriPackData } from "@/types/const.ts";
 
-function TriPack(): any {
+function TriPack() {
   return (
     <section className="w-full min-h-[680px] flex justify-center items-center flex-wrap gap-3">
       {TriPackData.map((card) => {
         return (
-          <article className="min-w-[420px]" key={card.id}>
+          <article className="min-w-[420px] basis-1" key={card.id}>
             <Image
               src={card.image}
               alt={"TriPackData.description"}
@@ -20,6 +20,7 @@ function TriPack(): any {
             </h2>
             <p className="w-[380px] text-justify">{card.description}</p>
             <h3 className="font-bold py-2">
+              {/* <!-- TODO --> */}
               <Link href={"card.url"}>mas info {"->"} </Link>
             </h3>
           </article>

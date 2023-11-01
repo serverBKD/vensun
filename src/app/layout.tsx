@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`{inter.className} relative bg-[#666]`}>
+      <body className={`{inter.className} relative bg-[#fff]`}>
         <span id="top"></span>
         {children}
         <Footer />

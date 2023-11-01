@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import { UrlObject } from "url"
 
 //. Interfaces
 
@@ -7,7 +8,7 @@ interface Imagen {
   alt?: string 
   width?: number
   height?: number
-  url?: string
+  url?: string | UrlObject
 }
 interface Card extends Imagen{
   id?: number

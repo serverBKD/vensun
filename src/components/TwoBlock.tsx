@@ -23,7 +23,8 @@ function TwoBlock({
           width={width}
           height={height}
           quality={100}
-          className="w-[640px] h-[320px] contain"
+          sizes="100vw"
+          className="maxWidth: 100vw"
         />
       </article>
       <article
