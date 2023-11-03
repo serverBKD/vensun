@@ -6,7 +6,7 @@ export default function Cards({ numGRID: numGRID = 4 }) {
   const OFF = (X: number) => {
     const X0 = Number(DATACARD[3].price)
     let resOFF = (X0 * X) / 100
-    console.log(X0 - resOFF)
+    // console.log("descuento:" ,X0 - resOFF)
     return resOFF.toFixed(2)
   }
 
@@ -17,7 +17,7 @@ export default function Cards({ numGRID: numGRID = 4 }) {
       {DATACARD.slice(0, numGRID).map((item) => {
         return (
           <article
-            className='w-[320px] min-h-[380px] mt-7 rounded-lg overflow-hidden bg-white text-black max-lg:w-[420px]'
+            className='w-[320px] min-h-[380px] mt-7 rounded-lg overflow-hidden bg-white text-black hover:shadow-2xl max-lg:w-[420px]'
             key={item.id}
           >
             <Image

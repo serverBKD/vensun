@@ -7,15 +7,18 @@ import Cards from '@/components/Cards.tsx'
 import Title from '@/components/Title.tsx'
 import BrandShop from '@/components/BrandShop.tsx'
 
+//. Props
 import { imgTwoBlocks } from '@/types/const.ts'
+import { TriPackData } from '@/types/const.ts'
+//. console.log({ TriPackData })
 
 export default function Home () {
   return (
     <main className="w-full min-h-screen flex flex-col items-center justify-between scroll-smooth">
       <Hero />
       <Navbar RenderHome={false} />
-      {/* <Title H1="¡dime a donde vamos!" /> */}
-      <TriPack />
+      <Title T1="¡dime a donde vamos!" urlT1={"/motos"}/>
+      <TriPack Data={TriPackData}/>
       <CTA />
       <TwoBlock
         fullname="Gran Leon GC200"
@@ -28,7 +31,7 @@ export default function Home () {
         colorBg="#2c2c2e"
         colorText="#fff"
       />
-      <Title H1="¡Partes y Repuestos!" />
+      <Title T1="¡Partes y Repuestos!" urlT1={"/partes"} />
       <Cards numGRID={4} />
       <BrandShop />
     </main>

@@ -38,7 +38,7 @@ export const TriPackData: Card[] = [
     description:
       "lorem ipsum de concesionario de motos 200cc Moto de Paseo Fabricacion Venezolana",
     image: "/products/motos/motosplaceholdervensun.png",
-    url: "https://vensun.com/motos",
+    url: "/motos",
     width: 320,
     height: 220
   },
@@ -48,7 +48,7 @@ export const TriPackData: Card[] = [
     description:
       "lerror consequatur maxime minus nostrum minima provident quo recusandae",
     image: "/hero/part-finder-img.png",
-    url: "https://vensun.com/partes",
+    url: "/partes",
     width: 320,
     height: 220
   },
@@ -58,7 +58,7 @@ export const TriPackData: Card[] = [
     description:
       "error consequatur m minima provident quo recusandae",
     image: "/placeholders/pexels-photo-12741644.jpeg",
-    url: "https://vensun.com/tiendas",
+    url: "/tiendas",
     width: 320,
     height: 220
   },

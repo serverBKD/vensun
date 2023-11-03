@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import img0 from '/public/products/placeholder_motos/MORADA-500x660.png'
 
-export default function BrandShop() {
+export default function BrandShop () {
   return (
     <section className='w-full h-[640px] px-5 flex justify-center items-center flex-wrap md:w-[60%] md:mx-auto bg-[#F6F6F6]'>
       <article className='w-[60%] min-h-[480px] md:basis-1/2 rounded-sm border-4 border-slate-400 overflow-hidden bg-white grid place-content-center'>

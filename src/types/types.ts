@@ -1,11 +1,12 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
 import { StaticImageData } from "next/image"
 import { UrlObject } from "url"
 
 //. Interfaces
 
 interface Imagen {
-  image: string | StaticImageData
-  alt?: string 
+  image: string | StaticImageData | StaticImport
+  alt?: string
   width?: number
   height?: number
   url?: string | UrlObject
@@ -34,6 +35,7 @@ interface LinkItems {
 
 type RenderHome = boolean | any
 type numGRID = number | any
+type basicString = string | any | UrlObject
 
 export type {
   Imagen,
@@ -41,5 +43,6 @@ export type {
   CardTwoBlock,
   LinkItems,
   RenderHome,
-  numGRID
+  numGRID,
+  basicString
 }

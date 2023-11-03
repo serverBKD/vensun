@@ -16,7 +16,7 @@ async function Page() {
   return (
     <section className="w-full min-h-screen h-auto bg-gray-400">
       <Navbar RenderHome={true} />
-      <Title H1="Partes y Repuestos" />
+      <Title H1="Partes y Repuestos" urlT1="/"/>
       <div className="w-[90%] mx-5 flex justify-center flex-wrap overflow-hidden">
         {Partes.map((item: any) => (
           <article

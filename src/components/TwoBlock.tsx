@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { CardTwoBlock } from "@/types/types.tsx";
 
 function TwoBlock({
@@ -13,9 +14,9 @@ function TwoBlock({
   colorText,
 }: CardTwoBlock) {
   return (
-    <section className="w-[80%] min-h-[120px] mx-auto hidden md:flex justify-center items-center flex-wrap text-black">
+    <section className="w-[90%] min-h-[120px] mx-auto hidden md:flex justify-center items-center flex-wrap shadow-2xl ">
       <article
-        className={`${ordenBlock} w-full max-h-{height} overflow-hidden md:w-[60%] bg-white skew-x-6 `}
+        className={`${ordenBlock} w-full max-h-{height} overflow-hidden md:w-[60%] bg-white  `}
       >
         <Image
           src={image}
@@ -23,24 +24,21 @@ function TwoBlock({
           width={width}
           height={height}
           quality={100}
-          sizes="100vw"
-          className="maxWidth: 100vw"
+          style={{width: "100%",maxHeight:"calc(100vh - 5rem)",margin:"0 auto",padding:"0", textAlign: "center",  objectFit: "cover"}}
         />
       </article>
       <article
-        className={`${colorBg} w-full md:w-[40%] flex justify-center items-center mx-auto gap-3 px-10 ${colorText}`}
+        className={`${colorBg} w-full md:w-[40%] h-screen max-h-{height} grid place-items-center bg-zinc-300 shadow-cyan-500/50 skew-x-6`}
       >
-        <div>
-          <h1 className=" text-black w-full font-bold text-2xl mb-3">
-            {fullname}
+        <div className="text-[#00CCFF] gap-y-5 flex flex-col">
+          <h1 className="font-bold text-2xl">
+            Modelo: {fullname}
           </h1>
-          <p className="text-justify">{description}</p>
-          <button
-            onClick={() => alert("ya te escuche!")}
-            className="w-full py-3 text-2xl rounded-md underline text-[#00CCFF] bg-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+          <p className="text-justify ">{description}</p>
+          <Link href={"/"} className="w-full block text-lg font-bold hover:underline hover:shadow-2xl hover:text-center"
           >
-            motos
-          </button>
+            | Detalles técnicos |
+          </Link>
         </div>
       </article>
     </section>
