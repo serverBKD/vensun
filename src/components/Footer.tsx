@@ -15,7 +15,7 @@ export default function Footer() {
 					</ol>
 				</article>
 				<article className="min-w-[540px] text-center bg-sky-600">
-					<Title T1={'VENSUN | 2023'} urlT1={'/'}/>
+					<Title linkName={'VENSUN | 2023'} linkUrl={'/'}/>
 				</article>
 				<article>
 					<RedesSociales/>    
