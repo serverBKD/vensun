@@ -26,9 +26,9 @@ interface CardTwoBlock extends Card{
   colorText: string
 }
 interface LinkItems {
-  linkName?: string 
-  linkSrc?: string | StaticImageData
-  linkUrl: string
+  linkName?: string | any
+  linkSrc?: string | StaticImageData | any
+  linkUrl: string | any
 } 
 
 //. Types

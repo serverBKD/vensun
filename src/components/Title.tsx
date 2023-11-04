@@ -4,7 +4,7 @@ import { basicString } from "@/types/types.ts"
 
 export default function Title({ T1 , urlT1 }: basicString ) {
   return (
-    <section className="w-[90%] pl-7 py-3">
+    <section className="w-[90%] pl-7 pt-3 pb-1" >
       <h1
         className={`${ZenDotsRegular.className} text-black text-xl uppercase font-bold text-start py-3`}
       >

@@ -1,52 +1,54 @@
-// "use client";
-import Title from "@/components/Title.tsx";
-import Cards from "@/components/Cards.tsx";
-import Navbar from "@/components/Navbar";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
+// "use client"
+import Title from "@/components/Title.tsx"
+import Navbar from "@/components/Navbar"
+import Image from "next/image"
 
 async function getPartes() {
-  const res = await fetch("https://fakestoreapi.com/products");
-  const data = await res.json();
-  return data;
+  const res = await fetch("https://fakestoreapi.com/products")
+  const data = await res.json()
+  return data
 }
 
 async function Page() {
-  const Partes = await getPartes();
+  const Partes = await getPartes()
   return (
-    <section className="w-full min-h-screen h-auto bg-gray-400">
+    <main className="w-full min-h-screen h-auto bg-gray-400">
       <Navbar RenderHome={true} />
-      <Title H1="Partes y Repuestos" urlT1="/"/>
-      <div className="w-[90%] mx-5 flex justify-center flex-wrap overflow-hidden">
+      <Title T1="Partes y Repuestos" urlT1="/"/>
+      <section className="w-[90%] mx-5 flex justify-center flex-wrap overflow-hidden">
         {Partes.map((item: any) => (
           <article
             key={item.id}
-            className="max-w-[220px] max-h-[480px] h-auto mx-1 my-3 rounded-md overflow-hidden bg-cyan-500 text-white hover:max-h-[320px]"
+            className="max-w-[420px] md:max-w-[320px] max-h-[480px] h-auto min-h-[420px] mx-1 my-3 rounded-md overflow-hidden hover:shadow-2xl"
           >
             <Image
               src={item.image}
               alt={item.description}
-              width={220}
+              width={320}
               height={80}
               style={{
                 minHeight: "320px",
                 maxHeight: "320px",
-                minWidth: "220px",
+                minWidth: "420px",
                 maxWidth: "100%",
-                objectFit: "cover",
-                padding: "2rem 1rem",
+                objectFit: "contain",
+                padding: "1rem 2rem",
+                textAlign:"center",
                 backgroundColor: "#fff",
-                borderBottom: ".2px solid #EBEBEB",
+                borderBottom: "5px solid bg-gray-400",
               }}
             />
-            <p className="text-xs py-1 px-3 font-semibold ">
-              {item.description}
+            <div className="p-4 min-h-fit bg-cyan-500 text-white ">
+              <p className="font-bold">{item.title.substring(0,16)}</p>
+            <p className="text-xs py-1 px-3 font-semibold text-justify">
+              {item.description.substring(0,64)}
             </p>
+</div>
           </article>
         ))}
-      </div>
-    </section>
-  );
+      </section>
+    </main>
+  )
 }
 
-export default Page;
+export default Page

@@ -1,8 +1,21 @@
-import { Card, Imagen, LinkItems} from "@/types/types.ts";
+import { Card, Imagen, LinkItems} from "@/types/types.ts"
+
+export const CardHero: Card = 
+  {
+    fullname: "Moto Venezolana",
+    description:
+    "lorem ipsum de concesionario de motos 200cc Moto de Paseo Fabricacion Venezolana",
+    price: 1200,
+    image: "/products/motos/motosplaceholdervensun.png",
+    url: "/motos",
+    width: 320,
+    height: 220
+  }
+
 
 //. NavBar
 
-export const NavBarTxt = [
+export const NavBarTxt: LinkItems[] = [
   {
     linkName: "producto",
     linkUrl: "/productos",
@@ -11,11 +24,11 @@ export const NavBarTxt = [
     linkName: "contacto",
     linkUrl: "/contacto",
   },
-];
+]
 
 //. NavBar Productos
 
-export const NavBarTxtProductos = [
+export const NavBarTxtProductos: LinkItems[] = [
   {
     linkName: "home",
     linkUrl: "/",
@@ -23,21 +36,21 @@ export const NavBarTxtProductos = [
   {
     linkName: "contacto",
     linkUrl: "/contacto",
-  },
-];
+  }
+]
 
 //. Props TwoBlocks
 
 
 //. TriPackData
 
-export const TriPackData: Card[] = [
+export const TriPackData0: Card[] = [
   {
     id: 0,
     fullname: "Moto Venezolana",
     description:
       "lorem ipsum de concesionario de motos 200cc Moto de Paseo Fabricacion Venezolana",
-    image: "/products/motos/motosplaceholdervensun.png",
+    image: "/placeholders/1000088634.jpg",
     url: "/motos",
     width: 320,
     height: 220
@@ -47,7 +60,7 @@ export const TriPackData: Card[] = [
     fullname: "Partes & Garantias",
     description:
       "lerror consequatur maxime minus nostrum minima provident quo recusandae",
-    image: "/hero/part-finder-img.png",
+    image: "/placeholders/parts-al-hc3.webp",
     url: "/partes",
     width: 320,
     height: 220
@@ -56,13 +69,45 @@ export const TriPackData: Card[] = [
     id: 2,
     fullname: "concesionarios",
     description:
-      "error consequatur m minima provident quo recusandae",
+      "error consequatur m minima provident quo recusandae m minima provident q m minima provident q",
     image: "/placeholders/pexels-photo-12741644.jpeg",
     url: "/tiendas",
     width: 320,
     height: 220
   },
-];
+]
+export const TriPackData1: Card[] = [
+  {
+    id: 0,
+    fullname: "VALENCIA",
+    description:
+      "Tienda Modelo de Venta de Moto de Paseo Fabricacion Venezolana",
+    image: "/products/motos/motosplaceholdervensun.png",
+    url: "/motos",
+    width: 320,
+    height: 220
+  },
+  {
+    id: 1,
+    fullname: "NIRGUA",
+    description:
+      "Planta de Ensamblaje para proyeccion en los Llanos Venezolanos",
+    image: "/hero/part-finder-img.png",
+    url: "/partes",
+    width: 320,
+    height: 220
+  },
+  {
+    id: 2,
+    fullname: "CORO",
+    description:
+      "Planta en la Zona Economica Especial para la Exportacion de Marca",
+    image: "/placeholders/pexels-photo-12741644.jpeg",
+    url: "/tiendas",
+    width: 320,
+    height: 220
+  },
+]
 
 //. TwoBlocks
 
@@ -111,7 +156,7 @@ export const galleryImg: Imagen[] = [
     width: 320,
     height: 220
   },
-];
+]
 
 //. Navbar
 
@@ -130,16 +175,6 @@ export const NavBarItems: LinkItems[] = [
     linkSrc: "/",
     linkName: 'Concesionarios',
     linkUrl: "/tiendas"
-  },
-    {
-    linkSrc: "/",
-    linkName: 'ensamblaje',
-    linkUrl: "/fabrica"
-  },
-      {
-    linkSrc: "/",
-    linkName: 'tractor',
-    linkUrl: "/tractor"
   },
    {
     linkSrc: "/",
@@ -237,7 +272,7 @@ export const DATACARD: Card[] = [
     description: "Lighting Security",
     image: "/products/repuestos/IMG_20231012_155602.jpg",
   },
-];
+]
 
  //. Footer
 
@@ -340,4 +375,4 @@ count: 70
 },
 ]
 
-export const imgTwoBlocks = "/products/placeholder_motos/azul-1-500x660.png"; 
+export const imgTwoBlocks = "/products/placeholder_motos/azul-1-500x660.png" 

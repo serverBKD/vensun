@@ -1,21 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '@/types/types.ts'
-import { ReactNode } from 'react'
 
-function TriPack({ Data }: ReactNode<Array> | Card[]) {
-  console.log(Data)
+function TriPack({ Data }: Card | any ) {
   return (
-    <section className="w-full min-h-[680px] flex justify-center items-center flex-wrap gap-3">
+    <section className="w-full h-full min-h-screen flex justify-center items-center flex-wrap gap-x-3 pb-2">
       {Data.map((card:Card) => {
         return (
-          <article className="min-w-[420px] basis-1 shadow-2xl mx-2" key={card.id}>
+          <article className="min-w-[420px] min-h-max max-h-480px basis-4 shadow-2xl " key={card.id}>
             <Image
               src={card.image}
               alt={card.description}
               width={card.width}
               height={card.height}
-              className="w-[380px] h-[380px]"
+              style={{width: "100%", minWidth: "420px",minHeight: "420px"  , flexBasis: 0}}
             />
             <h2 className="font-bold py-2 pl-3 uppercase text-lg">
               {card.fullname}

@@ -22,3 +22,13 @@ v0.0.12: / 31/10/2023
 
  npm init @eslint/config
   
+2023nov04: v0.1.0
+
+    - Correccion de Bugs de Cards
+    - Types e Interfaces mas simples
+    - Simplificacion de Components 
+    - Tripack + TwoBlock + BrandShop : CSS / Image
+    - Mejora de Footer + SubFooter
+  
+  Ya tiene mejor forma en Front, ahora vamos por la API, Base de Datos + Auth + Contacto
+  

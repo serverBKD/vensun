@@ -6,7 +6,7 @@ import { ZenDotsRegular } from '@/fonts/fonts.js'
 function Hero () {
   return (
     <section
-      className={`${ZenDotsRegular.className} w-full h-screen min-h-[100vh] flex items-center relative overflow-hidden`}
+      className={`${ZenDotsRegular.className} w-full h-screen min-h-[100vh] flex items-center text-center relative overflow-hidden`}
     >
       <Image
         src="/hero/herovs.jpg"
@@ -20,17 +20,15 @@ function Hero () {
           minHeight: '100vh'
         }}
       />
-      <div className="max-w-[420px] flex flex-col px-8 py-4 rounded-xl gap-y-3 bg-gradient-to-r from-yellow-500 via-blue-600 to-red-600 text-white xs:mx-auto lg: mx-7">
+      <div className="max-w-[640px] flex flex-col px-8 py-4 rounded-xl gap-y-3 bg-[#00ffcc] text-white xs:mx-auto lg: mx-7">
         <h1 className="text-5xl font-extrabold ">VENSUN</h1>
-        <label
-          htmlFor="wsUser"
-          className="text-xl font-bold italic tracking-[.25rem]"
+        <p className="text-lg font-bold italic tracking-[.25rem]"
         >
           ¡dime a donde vamos!
-        </label>
+        </p>
         <Link
           href={'/motos'}
-          className="w-full py-3 text-2xl rounded-md text-center  text-white bg-gray-600 hover:underline"
+          className="w-full py-3 text-2xl rounded-md text-center  text-white bg-sky-600 hover:underline hover:shadow-xl"
         >
           motos
         </Link>

@@ -9,8 +9,8 @@ import BrandShop from '@/components/BrandShop.tsx'
 
 //. Props
 import { imgTwoBlocks } from '@/types/const.ts'
-import { TriPackData } from '@/types/const.ts'
-//. console.log({ TriPackData })
+import { TriPackData0 } from '@/types/const.ts'
+
 
 export default function Home () {
   return (
@@ -18,8 +18,8 @@ export default function Home () {
       <Hero />
       <Navbar RenderHome={false} />
       <Title T1="¡dime a donde vamos!" urlT1={"/motos"}/>
-      <TriPack Data={TriPackData}/>
-      <CTA />
+      <TriPack Data={TriPackData0}/>
+      <CTA CTAtext={"Escribenos al WhatsApp"} CTAlink={"/contacto"} CTATextLink={"WSX"}/>
       <TwoBlock
         fullname="Gran Leon GC200"
         description="Paseo tipo Chopper 200cc Doble tubo de escape"
@@ -33,7 +33,11 @@ export default function Home () {
       />
       <Title T1="¡Partes y Repuestos!" urlT1={"/partes"} />
       <Cards numGRID={4} />
+      <Title T1="¡compra ahora >!" urlT1={"/contacto"} />
+      {/* <!-- . TODO》 Link --> */}
+      <CTA CTAtext={"¿LISTO PARA COMPRAR?"} CTAlink={"/partes"} CTATextLink={"comprar"}/>
       <BrandShop />
+      <Title T1="¡dime a donde vamos!" urlT1={"/motos"}/>
     </main>
   )
 }

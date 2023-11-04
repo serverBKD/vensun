@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Title from '@/components/Title.tsx'
 import { numGRID } from '@/types/types.ts'
 import { DATACARD } from '@/types/const.ts'
 
@@ -13,7 +14,7 @@ export default function Cards({ numGRID: numGRID = 4 }) {
   const xOFF = OFF(35)
 
   return (
-    <section className='w-[90%] h-auto min-h-[720px] mx-auto flex justify-center items-center flex-wrap gap-x-3 pb-3 mb-5 bg-[#EBEBEB]'>
+    <main className='w-[90%] h-auto min-h-[720px] mx-auto flex justify-center items-center flex-wrap gap-x-3 pb-3 mb-5 bg-[#EBEBEB]'>
       {DATACARD.slice(0, numGRID).map((item) => {
         return (
           <article
@@ -51,6 +52,6 @@ export default function Cards({ numGRID: numGRID = 4 }) {
           </article>
         )
       })}
-    </section>
+    </main>
   )
 }

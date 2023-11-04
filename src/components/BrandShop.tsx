@@ -1,64 +1,39 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import img0 from '/public/products/placeholder_motos/MORADA-500x660.png'
+import { CardHero } from '@/types/const.ts'
+const { fullname, image, url,price } = CardHero
 
 export default function BrandShop () {
   return (
-    <section className='w-full h-[640px] px-5 flex justify-center items-center flex-wrap md:w-[60%] md:mx-auto bg-[#F6F6F6]'>
-      <article className='w-[60%] min-h-[480px] md:basis-1/2 rounded-sm border-4 border-slate-400 overflow-hidden bg-white grid place-content-center'>
-        <Image src={img0} alt='product16' width={480} height={420} />
+    <section className='w-[90%]  flex flex-wrap lg:flex-nowrap mx-auto px-3 transition ease-in-out delay-150 min-h-screen md:min-h-[720px]'>
+      <article className='w-full lg:w-[70%] min-h-full rounded-sm border-4 border-sky-400 overflow-hidden bg-white mx-auto'>
+        <Image
+          src={image}
+          alt={fullname}
+          width={480}
+          height={420}
+          style={{width:"100%",height:"100%" ,backgroundColor:"#fff",margin: "auto",padding:".5rem"}}
+        />
       </article>
-      <article className='w-[40%] min-h-[480px] md:basis-1/2 text-black text-center font-bold grid grid-flow-row'>
-        <div>
-          <p>Lorem, ipsum dolor.</p>
-        </div>
-        <div>
-          <p>Price: $100</p>
-        </div>
-        <div>
-          <p>Hello Mundius</p>
-        </div>
-        {/* <!--Selectors --> */}
-        <div className='w-[80%] h-fit text-start text-black flex justify-center mx-auto'>
-          <div className='grid'>
-            <label htmlFor='color'>Color</label>
-            <select
-              name='color'
-              id='color'
-              className='w-full bg-white-600 text-black rounded-sm mx-1 border-4'
-            >
-              <option value='Blue'>Blue</option>
-              <option value='Black'>Black</option>
-              <option value='Browm'>Browm</option>
-            </select>
-          </div>
-          <div className='grid gap-0'>
-            <label htmlFor='size' className='offset-x-2'>
-              Size
-            </label>
-            <select
-              name='size'
-              id='size'
-              className='w-full bg-white-600 text-black rounded-sm mx-1 border-4 '
-            >
-              <option value='M'>M</option>
-              <option value='L'>L</option>
-              <option value='XL'>XL</option>
-              <option value='XXL'>XXL</option>
-              <option value='XXXL'>XXXL</option>
-              <option value='4XL'>4XL</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <Link
-            href={'/motos'}
-            className='bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out w-[80%] text-sm font-semibold text-center hover: text-white rounded-sm px-3 py-1 ring-2 ring-blue-500'
-          >
-            Add to Cart
-          </Link>
-        </div>
+      <article className='w-full lg:min-w-[30%] h-auto grid grid-cols-3 grid-rows-4 grid-flow-row-dense bg-black text-white text-center'>
+        <div className=' hover:bg-emerald-400'>1</div>
+        <div className='hover:bg-emerald-400'>2</div>
+        <div className='hover:bg-emerald-400'>3</div>
+        <div className='hover:bg-emerald-400'>4</div>
+        <div className='hover:bg-emerald-400'>5</div>
+        <div className='hover:bg-emerald-400'>6</div>
+        <div className='hover:bg-emerald-400'>7</div>
+        <div className='hover:bg-emerald-400'>8</div>
+        <div className='hover:bg-emerald-400'>9</div>
+        <div className='hover:bg-emerald-400'>10</div>
+        <div className='hover:bg-emerald-400'>11</div>
+        <div className='hover:bg-emerald-400'>12</div>
+
       </article>
     </section>
   )
 }
+
+          {/* <p>{fullname}</p>
+          <p>Price: {price}</p>
+          <p>Hello Mundius</p> */}
