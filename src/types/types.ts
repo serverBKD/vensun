@@ -1,6 +1,6 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
-import { StaticImageData } from "next/image"
-import { UrlObject } from "url"
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { StaticImageData } from 'next/image'
+import { UrlObject } from 'url'
 
 //. Interfaces
 
@@ -11,38 +11,48 @@ interface Imagen {
   height?: number
   url?: string | UrlObject
 }
-interface Card extends Imagen{
+interface Card extends Imagen {
   id?: number
   fullname: string
   description: string
   price?: number
-  rating?: string | {}
+  rating?: string | object
   category?: string
 }
 
-interface CardTwoBlock extends Card{
+export interface CardPages extends Imagen {
+  id?: number
+  fullname: string
+  description: string
+  price?: number
+  rating?: string | object
+  category?: string
+  title: string
+}
+
+interface CardTwoBlock extends Card {
   ordenBlock: string
   colorBg: string
   colorText: string
 }
 interface LinkItems {
-  linkName?: string | any
-  linkSrc?: string | StaticImageData | any
-  linkUrl: string | any
-} 
+  linkName?: string
+  linkSrc?: string | StaticImageData
+  linkUrl: string
+}
 
 //. Types
 
-type RenderHome = boolean | any
-type numGRID = number | any
-type basicString = string | any | UrlObject
+type RenderHome = boolean 
+type numGRID = number
+type basicString = string | UrlObject
 
 export type {
-  Imagen,
-  Card,
-  CardTwoBlock,
-  LinkItems,
-  RenderHome,
-  numGRID,
-  basicString
+	Imagen,
+	Card,
+	CardTwoBlock,
+	LinkItems,
+	RenderHome,
+	numGRID,
+	basicString,
 }

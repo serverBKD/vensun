@@ -1,29 +1,21 @@
-import Link from "next/link";
-import Image from "next/image";
-import { LinkItems } from "@/types/types.ts";
+import Link from 'next/link'
+import Image from 'next/image'
+import { WhatsappButtonItems } from '@/types/const.ts'
 
-const WhatsappButtonItems: LinkItems | any = {
-  linkName: "WhatsApp",
-  linkUrl: "https://api.whatsapp.com/+584244201800",
-  linkSrc: "/items/whatsapp.svg",
-};
-
-function WhatsappButton(): any {
-  return (
-    <div className="fixed w-20 h-20 text-red-900 rounded-full  bottom-6 right-2 ">
-      <div className="w-150 h-150 rounded-full absolute bottom-6 right-2">
-        <Link href={WhatsappButtonItems.linkUrl} rel="noopener noreferrer" target="_blank" >
-          <Image
-            src={WhatsappButtonItems.linkSrc}
-            alt={WhatsappButtonItems.linkName}
-            width={150}
-            height={150}
-            quality={100}
-          />
-        </Link>
-      </div>
-    </div>
-  );
+export default function WhatsappButton() {
+	return (
+		<div className="fixed w-20 h-20 text-red-900 rounded-full  bottom-6 right-2 ">
+			<div className="w-150 h-150 rounded-full absolute bottom-6 right-2">
+				<Link href={WhatsappButtonItems.linkUrl} rel="noopener noreferrer" target="_blank" >
+					<Image
+						src={WhatsappButtonItems.linkSrc}
+						alt={WhatsappButtonItems.linkName}
+						width={150}
+						height={150}
+						quality={100}
+					/>
+				</Link>
+			</div>
+		</div>
+	)
 }
-
-export default WhatsappButton;
