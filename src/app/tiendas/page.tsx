@@ -7,9 +7,9 @@ import { TriPackData1 } from '@/types/const.ts'
 export default function page () {
 	return (
 		<main className="w-full min-h-screen bg-slate-400 ">
-			<Navbar RenderHome={true} />
-			<Title T1={'Concesionarios'} urlT1={'/'}/>
-			<TriPack Data={TriPackData1}/>
+			<Navbar/>
+			<Title linkName={'Concesionarios'} linkUrl={'/'}/>
+			<TriPack _Card={TriPackData1}/>
 		</main>
 	)
 }

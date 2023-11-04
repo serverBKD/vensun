@@ -11,12 +11,12 @@ async function getPartes() {
 	return data
 }
 
-async function Page() {
+export default async function Page() {
 	const Partes = await getPartes()
 	return (
 		<main className="w-full min-h-screen h-auto bg-gray-400">
-			<Navbar RenderHome={true} />
-			<Title T1='Partes y Repuestos' urlT1='/'/>
+			<Navbar />
+			<Title linkName='Partes y Repuestos' linkUrl='/'/>
 			<section className='w-[90%] mx-5 flex justify-center flex-wrap overflow-hidden'>
 				{Partes.map((item: CardPages) => (
 					<article
@@ -52,5 +52,3 @@ async function Page() {
 		</main>
 	)
 }
-
-export default Page
