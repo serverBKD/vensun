@@ -43,7 +43,6 @@ interface LinkItems {
 
 //. Types
 
-type RenderHome = boolean 
 type numGRID = number
 type basicString = string | UrlObject
 
@@ -52,7 +51,6 @@ export type {
 	Card,
 	CardTwoBlock,
 	LinkItems,
-	RenderHome,
 	numGRID,
 	basicString,
 }

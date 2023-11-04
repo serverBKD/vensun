@@ -2,26 +2,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '@/types/types.ts'
 
-function TriPack({ Data }: Array<Card> ) {
+function TriPack({ _Card } : {_Card:Array<Card>} ) : JSX.Element 	{
 	return (
 		<section className="w-full h-full min-h-screen flex justify-center items-center flex-wrap gap-x-3 pb-2">
-			{Data.map((card:Card) => {
+			{_Card.map((_card ) : JSX.Element => {
 				return (
-					<article className="min-w-[420px] min-h-max max-h-480px basis-4 shadow-2xl " key={card.id}>
+					<article className="min-w-[420px] min-h-max max-h-480px basis-4 shadow-2xl " key={_card.id}>
 						<Image
-							src={card.image}
-							alt={card.description}
-							width={card.width}
-							height={card.height}
+							src={_card.image}
+							alt={_card.description}
+							width={_card.width}
+							height={_card.height}
 							style={{width: '100%', minWidth: '420px',minHeight: '420px'  , flexBasis: 0}}
 						/>
 						<h2 className="font-bold py-2 pl-3 uppercase text-lg">
-							{card.fullname}
+							{_card.fullname}
 						</h2>
-						<p className="w-[380px] text-justify px-1">{card.description}</p>
+						<p className="w-[380px] text-justify px-1">{_card.description}</p>
 						<h3 className="font-bold py-2 px-5">
 							{/* <!-- TODO emoji o svg --> */}
-							<Link href={card.url}>mas info {'->'} </Link>
+							<Link href={'_card.url'}>mas info {'->'} </Link>
 						</h3>
 					</article>
 				)

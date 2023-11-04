@@ -16,10 +16,10 @@ export default function Home () {
 	return (
 		<main className="w-full min-h-screen flex flex-col items-center justify-between scroll-smooth">
 			<Hero />
-			<Navbar RenderHome={false} />
-			<Title T1="¡dime a donde vamos!" urlT1={'/motos'}/>
-			<TriPack Data={TriPackData0}/>
-			<CTA CTAtext={'Escribenos al WhatsApp'} CTAlink={'/contacto'} CTATextLink={'WSX'}/>
+			<Navbar/>
+			<Title linkName="¡dime a donde vamos!" linkUrl={'/motos'}/>
+			<TriPack _Card={TriPackData0}/>
+			<CTA linkName={'Escribenos al WhatsApp'} linkUrl={'/contacto'} linkSrc={'WSX'}/>
 			<TwoBlock
 				fullname="Gran Leon GC200"
 				description="Paseo tipo Chopper 200cc Doble tubo de escape"
@@ -31,13 +31,13 @@ export default function Home () {
 				colorBg="#2c2c2e"
 				colorText="#fff"
 			/>
-			<Title T1="¡Partes y Repuestos!" urlT1={'/partes'} />
+			<Title linkName="¡Partes y Repuestos!" linkUrl={'/partes'} />
 			<Cards numGRID={4} />
-			<Title T1="¡compra ahora >!" urlT1={'/contacto'} />
+			<Title linkName="¡compra ahora >!" linkUrl={'/contacto'} />
 			{/* <!-- . TODO》 Link --> */}
-			<CTA CTAtext={'¿LISTO PARA COMPRAR?'} CTAlink={'/partes'} CTATextLink={'comprar'}/>
+			<CTA linkName={'¿LISTO PARA COMPRAR?'} linkUrl={'/partes'} linkSrc={'comprar'}/>
 			<BrandShop />
-			<Title T1="¡dime a donde vamos!" urlT1={'/motos'}/>
+			<Title linkName="¡dime a donde vamos!" linkUrl={'/motos'}/>
 		</main>
 	)
 }
