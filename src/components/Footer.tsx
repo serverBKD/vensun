@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Title from '@/components/Title.tsx'
-import RedesSociales from '@/components/RedesSociales.tsx'
+// import RedesSociales from '@/components/RedesSociales.tsx'
 
 export default function Footer() {
 	return (
@@ -17,9 +17,9 @@ export default function Footer() {
 				<article className="min-w-[540px] text-center bg-sky-600">
 					<Title linkName={'VENSUN | 2023'} linkUrl={'/'}/>
 				</article>
-				<article>
+				{/* <article>
 					<RedesSociales/>    
-				</article>
+				</article> */}
 			</section>
 			<section className="w-[75%] min-h-16 h-auto flex justify-between items-center flex-wrap md:flex-nowrap gap-x-6 mx-auto pb-6">
 				<article>
