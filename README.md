@@ -31,4 +31,5 @@ v0.0.12: / 31/10/2023
     - Mejora de Footer + SubFooter
   
   Ya tiene mejor forma en Front, ahora vamos por la API, Base de Datos + Auth + Contacto
-  
+
+2023nov04: v0.1.1: Configuracion Correcta del Eslint: npx eslint --init + midudev

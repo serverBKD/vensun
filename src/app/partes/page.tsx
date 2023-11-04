@@ -3,7 +3,7 @@ import React from 'react'
 import Title from '@/components/Title.tsx'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
-import { Card,CardPages } from '@/types/types.ts'
+import { CardPages } from '@/types/types.ts'
 
 async function getPartes() {
 	const res = await fetch('https://fakestoreapi.com/products')
