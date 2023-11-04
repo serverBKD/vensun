@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer.tsx'
-import WhatsappButton from '@/components/WhatsappButton.tsx'
+// import WhatsappButton from '@/components/WhatsappButton.tsx'
 import './globals.css'
 import type { Metadata } from 'next'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -21,7 +21,7 @@ export default function RootLayout({
 				<span id="top"></span>
 				{children}
 				<Footer />
-				<WhatsappButton />
+				{/* <WhatsappButton /> */}
 			</body>
 		</html>
 	)
