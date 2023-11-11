@@ -4,10 +4,10 @@ import { Card } from '@/types/types.ts'
 
 function TriPack({ _Card } : {_Card:Array<Card>} ) : JSX.Element 	{
     return (
-        <section className="w-full h-full min-h-screen flex justify-center items-center flex-wrap gap-x-3 pb-2">
+        <section className="w-full h-full min-h-screen flex justify-center items-center flex-wrap gap-x-5 my-3">
             {_Card.map((_card ) : JSX.Element => {
                 return (
-                    <article className="min-w-[420px] min-h-max max-h-480px basis-4 shadow-2xl " key={_card.id}>
+                    <article className="min-w-[420px] min-h-max basis-2 shadow-2xl border-4 border-slate-100 rounded-sm mb-5" key={_card.id}>
                         <Image
                             src={_card.image}
                             alt={_card.description}

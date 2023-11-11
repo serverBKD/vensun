@@ -5,7 +5,7 @@ import { UrlObject } from 'url'
 //. Interfaces
 
 interface Imagen {
-  image: string | StaticImageData | StaticImport
+  image: string | StaticImageData | StaticImport | HTMLImageElement
   alt?: string
   width?: number
   height?: number

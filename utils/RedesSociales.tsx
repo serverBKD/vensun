@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { WSIcon } from '@/components/Icon/WSIcon.tsx'
 
 import { FooterItems } from '@/types/const.ts'
 import { LinkItems } from '@/types/types.ts'
@@ -12,12 +13,13 @@ export default function RedesSociales() {
                     <li key={index}>
                         <Link href={footer.linkUrl}>
                             <Image
-                                src={footer.linkSrc}
-                                alt={footer.linkName}
+                                src={WSIcon}
+                                alt={'footer.linkName'}
                                 width={320}
                                 height={220}
                                 style={{ width: '48px', color: 'whitesmoke' }}
                             />
+
                         </Link>
                     </li>
                 ))}

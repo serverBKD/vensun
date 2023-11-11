@@ -6,11 +6,11 @@ import TwoBlock from '@/components/TwoBlock.tsx'
 import Cards from '@/components/Cards.tsx'
 import Title from '@/components/Title.tsx'
 import BrandShop from '@/components/BrandShop.tsx'
+import CardBlocks from '@/components/CardBlocks.tsx'
 
 //. Props
 import { imgTwoBlocks } from '@/types/const.ts'
 import { TriPackData0 } from '@/types/const.ts'
-
 
 export default function Home () {
     return (
@@ -19,7 +19,8 @@ export default function Home () {
             <Navbar/>
             <Title linkName="¡dime a donde vamos!" linkUrl={'/motos'}/>
             <TriPack _Card={TriPackData0}/>
-            <CTA linkName={'Escribenos al WhatsApp'} linkUrl={'/contacto'} linkSrc={'WSX'}/>
+            <CTA/>
+            <CardBlocks numGRID={4}/>
             <TwoBlock
                 fullname="Gran Leon GC200"
                 description="Paseo tipo Chopper 200cc Doble tubo de escape"
@@ -31,11 +32,11 @@ export default function Home () {
                 colorBg="#2c2c2e"
                 colorText="#fff"
             />
-            <Title linkName="¡Partes y Repuestos!" linkUrl={'/partes'} />
+            <Title linkName="¡Partes y Repuestos!" linkUrl={'/partes'} linkSrc={'/items/whatsapp.svg'} />
             <Cards numGRID={4} />
             <Title linkName="¡compra ahora >!" linkUrl={'/contacto'} />
             {/* <!-- . TODO》 Link --> */}
-            <CTA linkName={'¿LISTO PARA COMPRAR?'} linkUrl={'/partes'} linkSrc={'comprar'}/>
+            <CTA/>
             <BrandShop />
             <Title linkName="¡dime a donde vamos!" linkUrl={'/motos'}/>
         </main>

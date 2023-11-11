@@ -32,16 +32,16 @@ model Image {
 model Product {
   id          String    @id @unique 
   fullname    String
-  descript    String?
+  description String?
   marca       String?   @default("bkd")
   modelo      String?
   img         String?
-  warehouseId Int       @default(0)
+  warehouseId String    @default("General") 
   price1      Float     @default(0)
   price2      Float     @default(0)
   price3      Float     @default(0)
   costo       Float     @default(0)
-  divisa      String
+  divisa      String    @default("USD")
   stock       Int       @default(0)
   unity       String
   serial      String?   @unique
