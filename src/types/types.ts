@@ -47,10 +47,10 @@ type numGRID = number
 type basicString = string | UrlObject
 
 export type {
-	Imagen,
-	Card,
-	CardTwoBlock,
-	LinkItems,
-	numGRID,
-	basicString,
+    Imagen,
+    Card,
+    CardTwoBlock,
+    LinkItems,
+    numGRID,
+    basicString,
 }

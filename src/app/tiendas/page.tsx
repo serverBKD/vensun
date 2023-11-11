@@ -5,11 +5,11 @@ import { TriPackData1 } from '@/types/const.ts'
 
 
 export default function page () {
-	return (
-		<main className="w-full min-h-screen bg-slate-400 ">
-			<Navbar/>
-			<Title linkName={'Concesionarios'} linkUrl={'/'}/>
-			<TriPack _Card={TriPackData1}/>
-		</main>
-	)
+    return (
+        <main className="w-full min-h-screen bg-slate-400 ">
+            <Navbar/>
+            <Title linkName={'Concesionarios'} linkUrl={'/'}/>
+            <TriPack _Card={TriPackData1}/>
+        </main>
+    )
 }
