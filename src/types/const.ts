@@ -14,9 +14,9 @@ export const CardHero: Card = {
 export const WhatsappButtonItems: LinkItems = {
     linkName: 'WhatsApp',
     linkUrl: 'https://api.whatsapp.com/+584244201800',
-    linkSrc: '/items/whatsapp.svg',
+    linkSrc: '/products/motos/motosplaceholdervensun.png',
 }
-
+//. /items/whatsapp.svg
 //. NavBar
 
 export const NavBarTxt: LinkItems[] = [
