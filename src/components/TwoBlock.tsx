@@ -13,9 +13,9 @@ function TwoBlock({
     colorBg,
 }: CardTwoBlock) {
     return (
-        <section className="w-[90%] min-h-[120px] mx-auto flex justify-center items-center flex-wrap shadow-2xl ">
+        <section className="w-[70%] h-[60%] mt-3 mx-auto flex justify-center items-center flex-wrap shadow-2xl shadow-slate-600 ">
             <article
-                className={`${ordenBlock} w-full max-h-{height} overflow-hidden md:w-[60%] bg-white  `}
+                className={`${ordenBlock} w-full   md:w-[60%] overflow-hidden grid place-items-center`}
             >
                 <Image
                     src={image}
@@ -23,18 +23,18 @@ function TwoBlock({
                     width={width}
                     height={height}
                     quality={100}
-                    style={{width: '100%',maxHeight:'calc(100vh - 5rem)',margin:'0 auto',padding:'0', textAlign: 'center',  objectFit: 'contain'}}
+                    className='w-[80%] max-h-[480px] object-contain shadow-inner'
                 />
             </article>
             <article
-                className={`${colorBg} w-full md:w-[40%] h-screen max-h-{height} hidden md:flex justify-center items-center bg-zinc-300 shadow-cyan-500/50 skew-x-6`}
+                className={`${colorBg} w-full md:w-[40%] h-full bg-slate-600 text-white shadow-cyan-500/50 skew-x-4`}
             >
-                <div className="text-[#00CCFF] gap-y-5 flex flex-col mx-4 px-3">
+                <div className="w-full p-3 gap-y-5 flex flex-col">
                     <h1 className="font-bold text-2xl">
             Modelo: {fullname}
                     </h1>
                     <p className="text-justify ">{description}</p>
-                    <Link href={'/'} className="w-full block text-lg font-bold hover:underline hover:shadow-2xl hover:text-center"
+                    <Link href={'/'} className="text-md font-bold hover:underline hover:shadow-2xl"
                     >
             | Detalles técnicos |
                     </Link>

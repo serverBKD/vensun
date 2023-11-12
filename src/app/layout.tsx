@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={'{inter.className} relative bg-[#fff]'}>
+            <body className={'{inter.className} relative bg-[#fff] scroll-smooth'}>
                 <span id="top"></span>
                 {children}
                 <Footer />

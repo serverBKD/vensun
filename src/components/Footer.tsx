@@ -4,7 +4,7 @@ import Title from '@/components/Title.tsx'
 
 export default function Footer() {
     return (
-        <section className="w-full min-h-16 h-auto mt-3 mb-0 bg-slate-600">
+        <section className="w-full min-h-16 h-auto mt-3 mb-0 bg-slate-600 overflow-hidden">
             <section className="w-[75%] min-h-16 h-auto flex justify-between items-center flex-wrap gap-3 mx-auto">
                 <article className="py-6">
                     <ol>

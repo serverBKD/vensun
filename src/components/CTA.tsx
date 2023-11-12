@@ -2,7 +2,7 @@
 
 export default function CTA () {
     return (
-        <section className="w-full h-auto py-5 bg-slate-600 grid place-content-center gap-y-3 text-center">
+        <section className="w-full h-auto py-5 mt-1 bg-slate-600 grid place-content-center gap-y-3 text-center">
             <button onClick={() => window.open('https://api.whatsapp.com/send?phone=584124363200', '_blank')}
                 className=" font-bold w-48 bg-[#25D366] text-white px-2 py-1 rounded-2xl text-lg transition-all duration-300 ease-in-out hover:underline hover:shadow-2xl"
             >
