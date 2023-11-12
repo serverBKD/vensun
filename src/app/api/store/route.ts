@@ -1,10 +1,21 @@
 import { NextResponse } from 'next/server'
-export function GET () {
-    return NextResponse.json(
-        {
-            message: 'success'
+import { prisma } from '@/db/prisma.ts'
+
+export async function GET() {
+    try {
+        const queryData = await prisma.Product.findMany()
+        return NextResponse.json(
+            {
+                queryData
+            }
+        )} catch (error) {
+        if (error instanceof Error){
+            return NextResponse.json(
+                {message: error.message}
+            )
         }
-    )
+    }
+
 }
 
 export function POST () {

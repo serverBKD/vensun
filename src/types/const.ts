@@ -166,6 +166,11 @@ export const galleryImg: Imagen[] = [
 export const NavBarItems: LinkItems[] = [
     {
         linkSrc: '/',
+        linkName: 'home',
+        linkUrl: '/',
+    },
+    {
+        linkSrc: '/',
         linkName: 'motos',
         linkUrl: '/motos',
     },
@@ -181,8 +186,8 @@ export const NavBarItems: LinkItems[] = [
     },
     {
         linkSrc: '/',
-        linkName: 'compras',
-        linkUrl: '/compras',
+        linkName: 'contacto',
+        linkUrl: '/contacto',
     },
 ]
 
