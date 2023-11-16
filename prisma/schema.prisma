@@ -36,14 +36,12 @@ model Product {
   marca       String?   @default("bkd")
   modelo      String?
   img         String?
-  warehouseId String    @default("General") 
-  price1      Float     @default(0)
-  price2      Float     @default(0)
-  price3      Float     @default(0)
-  costo       Float     @default(0)
-  divisa      String    @default("USD")
+  warehouse   String    @default("General") 
+  price_base  Float     @default(0)
+  price_sell  Float     @default(0)
+  divisa      String?   @default("USD")
   stock       Int       @default(0)
-  unity       String
+  unity       String?
   serial      String?   @unique
   barcode     String?   @unique
   sku         String?

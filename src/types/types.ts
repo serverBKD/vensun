@@ -54,3 +54,24 @@ export type {
     numGRID,
     basicString,
 }
+
+export interface Product{
+        fullname: string
+        description: string
+        modelo: string
+        marca?: string
+        img: string
+        warehouse: string 
+        price_base?: number           
+        price_sell?: number           
+        divisa?: string          
+        stock?: number              
+        unity?: string       
+        serial?: string        
+        barcode ?: string      
+        sku?: string         
+        weigth?: string         
+        dimension?: string   
+        nota?: string        
+        tags?: string
+}
